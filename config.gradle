@@ -1,0 +1,17 @@
+ext {
+    //build gradle plugin
+    externalAndroidBuildGradlePlugin = 'com.android.tools.build:gradle:2.3.3'
+
+    //android support libraries
+    externalAndroidAppCompatV7 = 'com.android.support:appcompat-v7:25.3.1'
+    externalAndroidDesign = 'com.android.support:design:25.3.1'
+
+    externalTestUnit = 'junit:junit:4.12'
+
+    //android sdk/tools version
+    externalCompileSdkVersion = 25
+    externalBuildToolsVersion = '25.0.3'
+
+    externalMinSdkVersion = 15
+    externalTargetSdkVersion = 25
+}
