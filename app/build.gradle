@@ -25,4 +25,5 @@ dependencies {
     testCompile externalTestUnit
     compile externalAndroidAppCompatV7
     compile externalAndroidDesign
+    compile project(':plugin')
 }

@@ -26,5 +26,5 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile externalAndroidAppCompatV7
     testCompile externalTestUnit
-
+    compile project(':plugin')
 }
