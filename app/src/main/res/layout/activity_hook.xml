@@ -9,13 +9,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="onHookClick"
-        android:text="hook功能" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onPluginClick"
-        android:text="插件功能" />
+        android:onClick="onLoadPlugin"
+        android:text="加载插件" />
 
 </LinearLayout>

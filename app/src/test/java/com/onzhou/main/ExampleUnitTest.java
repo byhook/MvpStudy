@@ -1,4 +1,4 @@
-package com.onzhou.apkplugin;
+package com.onzhou.main;
 
 import org.junit.Test;
 

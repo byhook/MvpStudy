@@ -1,23 +1,36 @@
-package com.onzhou.apkplugin;
+package com.onzhou.plugin;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import com.onzhou.common.utils.AssetsUtils;
-import com.onzhou.plugin.IApkPlugin;
+import com.onzhou.base.AbsBaseActivity;
+import com.onzhou.hook.HookActivity;
+import com.onzhou.main.*;
+import com.onzhou.utils.AssetsUtils;
 
 import java.io.File;
 
 import dalvik.system.DexClassLoader;
 
-public class MainActivity extends AppCompatActivity {
+/**
+ * @anchor: Andy
+ * @date: 2018-09-29
+ * @description:
+ */
+public class PluginActivity extends AbsBaseActivity {
 
     private static final String PLUGIN_NAME = "skin-plugin-debug.apk";
 
     private DexClassLoader mDexClassLoader;
+
+    public static void intentStart(Context context) {
+        Intent intent = new Intent(context, PluginActivity.class);
+        context.startActivity(intent);
+    }
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -33,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(com.onzhou.main.R.layout.activity_plugin);
     }
 
     public void onLoadPlugin(View view) {

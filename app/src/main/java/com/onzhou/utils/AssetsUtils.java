@@ -1,4 +1,4 @@
-package com.onzhou.common.utils;
+package com.onzhou.utils;
 
 import android.content.Context;
 
