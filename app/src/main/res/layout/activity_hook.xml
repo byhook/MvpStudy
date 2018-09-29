@@ -9,7 +9,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="onLoadPlugin"
-        android:text="加载插件" />
+        android:onClick="onStartClick"
+        android:text="启动测试" />
 
 </LinearLayout>
